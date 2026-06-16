@@ -8,9 +8,24 @@ spring:
     username: postgres
     password: postgres
 
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      teste: teste
+    consumer:
+      group-id: product-validation-group
+      auto-offset-reset: latest
+
   jpa:
     hibernate:
       ddl-auto: create-drop
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+logging:
+  level:
+    org:
+      apache:
+        kafka: OFF
