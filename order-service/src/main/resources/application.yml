@@ -1,0 +1,7 @@
+server:
+  port: 3000
+spring:
+  data:
+    mongodb:
+      database: admin
+      uri: mongodb://admin:123456@localhost:27017
