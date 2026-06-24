@@ -1,6 +1,5 @@
 package br.com.microservices.orchestrated.productvalidationservice.core.dto;
 
-
 import br.com.microservices.orchestrated.productvalidationservice.core.enums.ESagaStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,15 +13,14 @@ import java.util.List;
 import static org.springframework.util.ObjectUtils.isEmpty;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class Event {
 
-
     private String id;
-    private String transactionalId;
     private String orderId;
+    private String transactionId;
     private Order payload;
     private String source;
     private ESagaStatus status;
@@ -35,6 +33,4 @@ public class Event {
         }
         eventHistory.add(history);
     }
-
-
 }

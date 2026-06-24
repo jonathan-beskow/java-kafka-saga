@@ -14,6 +14,7 @@ public class InventoryConsumer {
 
     private final JsonUtil jsonUtil;
 
+
     @KafkaListener(
             groupId = "${spring.kafka.consumer.group-id}",
             topics = "${spring.kafka.topic.inventory-success}"
