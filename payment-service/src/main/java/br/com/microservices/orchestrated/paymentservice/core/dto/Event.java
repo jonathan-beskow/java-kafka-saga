@@ -17,7 +17,7 @@ public class Event {
 
 
     private String id;
-    private String transactionalId;
+    private String transactionId;
     private String orderId;
     private Order payload;
     private String source;
