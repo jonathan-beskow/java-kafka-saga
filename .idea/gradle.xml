@@ -11,15 +11,17 @@
             <option value="$PROJECT_DIR$/inventory-service" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/orchestrator-service" />
-        <option name="gradleJvm" value="17 (4)" />
+        <option name="gradleJvm" value="17 (3)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/orchestrator-service" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/order-service" />
@@ -28,24 +30,27 @@
             <option value="$PROJECT_DIR$/order-service" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/payment-service" />
-        <option name="gradleJvm" value="17 (2)" />
+        <option name="gradleJvm" value="17 (3)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/payment-service" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/product-validation-service" />
-        <option name="gradleJvm" value="17 (5)" />
+        <option name="gradleJvm" value="17 (3)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/product-validation-service" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
     </option>
   </component>
