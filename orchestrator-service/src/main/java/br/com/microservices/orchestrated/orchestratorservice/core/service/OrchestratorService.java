@@ -38,17 +38,17 @@ public class OrchestratorService {
 
     public void finishSagaSuccess(Event event) {
         event.setSource(ORCHESTRATOR);
-        event.setStatus(FAIL);
-        log.info("SAGA FINISHED WITH ERRORS FOR EVENT {}", event.getId());
-        addHistory(event, "Saga finished with errors!");
+        event.setStatus(SUCCESS);
+        log.info("SAGA FINISHED SUCCESSFULLY FOR EVENT {}", event.getId());
+        addHistory(event, "Saga finished with success!");
         notifyFinishedSaga(event);
     }
 
     public void finishSagaFail(Event event) {
         event.setSource(ORCHESTRATOR);
-        event.setStatus(SUCCESS);
-        log.info("SAGA FINISHED SUCCESSFULLY FOR EVENT {}", event.getId());
-        addHistory(event, "Saga finished successfully!");
+        event.setStatus(FAIL);
+        log.info("SAGA FINISHED WITH ERROR FOR EVENT {}", event.getId());
+        addHistory(event, "Saga finished with errors!");
         notifyFinishedSaga(event);
     }
 

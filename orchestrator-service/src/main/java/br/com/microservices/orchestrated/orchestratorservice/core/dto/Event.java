@@ -14,21 +14,19 @@ import java.util.List;
 import static org.springframework.util.ObjectUtils.isEmpty;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class Event {
 
-
     private String id;
-    private String transactionalId;
     private String orderId;
+    private String transactionId;
     private Order payload;
     private EEventSource source;
     private ESagaStatus status;
     private List<History> eventHistory;
     private LocalDateTime createdAt;
-
 
     public void addToHistory(History history) {
         if (isEmpty(eventHistory)) {
@@ -36,6 +34,4 @@ public class Event {
         }
         eventHistory.add(history);
     }
-
-
 }
